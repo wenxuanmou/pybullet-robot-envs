@@ -55,24 +55,33 @@ The pybullet-robot-envs environments adopt the OpenAI Gym environment interface,
 *pybullet-robot-envs* requires **python3** (>=3.5).
 
 ## Installation
-1. Before installing the required dependencies, you may want to create a virtual environment and activate it:
+1. Before installing the required dependencies, you may want to create a virtual environment and activate it (Conda would work as well):
     ```
     $ virtualenv ve_pybullet
     $ source ve_pybullet/bin/activate
     ```
-2. Install **git lfs** by following instructions here: [git-lfs.github.com](https://git-lfs.github.com/).
+2. Install **git lfs** by following instructions here: [git-lfs.github.com](https://github.com/git-lfs/git-lfs/wiki/Installation).
+   ```
+   $ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash ( If you'd like to use that and don't need the latest version, skip this below.)
+   $ sudo apt-get install git-lfs
+   ```
+   
 3. Clone the repository:
     ```
     $ git clone https://github.com/robotology-playground/pybullet-robot-envs.git
     $ cd pybullet-robot-envs
     ```
-4. Install the dependencies necessary to run and test the environments with PyBullet:
+4. After you are in the repository:
+   ```
+   $ git lfs install
+   ```
+5. Install the dependencies necessary to run and test the environments with PyBullet:
     ```
     $ pip3 install -r requirements.txt
     ```
     **Note:** Installing the requirements will install also [Stable Baselines](https://github.com/hill-a/stable-baselines/).
 
-5. Install the package:
+6. Install the package:
     ```
     $ pip3 install -e .
     ```
