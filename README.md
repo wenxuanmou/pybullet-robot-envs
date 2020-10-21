@@ -191,3 +191,6 @@ You can find more examples in the repository [https://github.com/eleramp/robot-a
   ```
   $ python pybullet_robot_envs/examples/algos/test/baselines/panda_envs/test_ddpg_reaching.py
   ```
+
+Others about the pybullet:
+All of the objects in pybullet_data can be found here: https://github.com/bulletphysics/bullet3/tree/master/data
